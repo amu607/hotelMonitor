@@ -1,0 +1,60 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+}
+@section scripts{
+    <script src="~/Scripts/hotel/hotelController.js"></script>    
+}
+
+<h2>title</h2>
+<div ng-app="hotelApp" ng-controller="TaskMonitorController">
+    add task:
+    <table>
+        <tr>
+            <td>task name</td>
+            <td><input type="text" id="taskName"/></td>
+        </tr>
+        <tr>
+            <td>worker name</td>
+            <td><input type="text" id="workerName" /></td>
+        </tr>
+        <tr>
+            <td>room name</td>
+            <td><input type="text" id="roomName"/></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="" ng-click="AddTask()">add task</a>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>TaskName</th>
+            <th>WorkerName</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in data.Tasks">
+            <td>{{ item.TaskName }}</td>
+            <td>{{ item.WorkerName }}</td>
+            <td>{{ item.HotelTaskStatus }}</td>
+        </tr>
+        </tbody>
+    </table>
+    <a href="#" ng-click="" >prev</a>
+    <a href="">next</a>
+    @*<table>
+        <tr>
+            <td>
+                <div ng-controller="TaskMonitorController">
+                    {{ Message }}
+                </div>
+            </td>
+        </tr>
+    </table>*@
+</div>

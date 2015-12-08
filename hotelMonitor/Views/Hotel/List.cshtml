@@ -1,0 +1,66 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+}
+
+@section scripts{
+    <script src="~/Scripts/jquery.color-2.1.2.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/hotel/hotelTask.js"></script>
+}
+
+<h2>Hotel Task</h2>
+<table>
+    <tr>
+        <td>task Id</td>
+        <td><input type="text" id="taskId" /></td>
+    </tr>
+    <tr>
+        <td>task name</td>
+        <td><input type="text" id="taskName"/></td>
+    </tr>
+    <tr>
+        <td>worker name</td>
+        <td><input type="text" id="workerName"/></td>
+    </tr>
+    <tr>
+        <td>room name</td>
+        <td><input type="text" id="roomName"/></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="button" id="add" value="Add Task" />
+            <input type="button" id="start" value="Start Task" />
+            <input type="button" id="close" value="Close Task"/>
+            <input type="button" id="clear" value="Clear Input"/>
+        </td>
+    </tr>
+</table>
+
+<h2>Hotel Task List</h2>
+<div id="taskTable">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>TaskId</th>
+                <th>TaskName</th>
+                <th>WorkerName</th>
+                <th>RoomName</th>
+                <th>Status</th>
+                <th>CreateDaetTime</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="loading"><td colspan="6">loading...</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<h2> message </h2>
+<div id="taskMessage">
+    <div class="inner">
+        <ul></ul>
+    </div>
+</div>
