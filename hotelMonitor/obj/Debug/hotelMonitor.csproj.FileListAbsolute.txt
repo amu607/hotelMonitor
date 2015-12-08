@@ -75,3 +75,5 @@ C:\Projects\hotelMonitor\hotelMonitor\bin\Microsoft.AspNet.SignalR.Core.dll
 C:\Projects\hotelMonitor\hotelMonitor\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
 C:\Projects\hotelMonitor\hotelMonitor\bin\Microsoft.AspNet.SignalR.Core.xml
 C:\Projects\hotelMonitor\hotelMonitor\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Projects\hotelMonitor\hotelMonitor\obj\Debug\hotelMonitor.Migrations.xxx.resources
+C:\Projects\hotelMonitor\hotelMonitor\obj\Debug\hotelMonitor.csproj.GenerateResource.Cache

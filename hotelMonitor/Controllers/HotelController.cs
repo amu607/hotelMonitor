@@ -12,12 +12,13 @@ namespace hotelMonitor.Controllers
     [AllowAnonymous]
     public class HotelController : Controller
     {
-        public ActionResult Index()
+
+        public ActionResult List()
         {
             return View();
         }
 
-        public ActionResult List()
+        public ActionResult Index()
         {
             return View();
         }
